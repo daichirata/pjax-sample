@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PjaxSample</title>
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="page-header">
+          <h1>Listing examples <small>pjax example</small></h1>
+        </div>
+        <div class="row">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

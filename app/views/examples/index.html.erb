@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Born at</th>
+    <th></th>
+  </tr>
+
+  <% @examples.each do |example| %>
+    <tr>
+      <td><%= example.name %></td>
+      <td><%= example.age %></td>
+      <td><%= example.born_at %></td>
+      <td><%= link_to 'Show', example, class: "btn info" %></td>
+    </tr>
+  <% end %>
+</table>
+
